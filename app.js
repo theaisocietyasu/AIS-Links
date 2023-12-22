@@ -16,6 +16,10 @@ const shareButtons = document.querySelectorAll('.tile-share-button')
 //     })
 // })
 
+const bgvideo = document.querySelector('.background-video')
+bgvideo.muted = "true"
+bgvideo.play()
+
 
 async function copyText(e) {
     e.preventDefault()
