@@ -26,7 +26,7 @@ async function copyText(e) {
     const link = this.getAttribute('link')
     try {
         await navigator.clipboard.writeText(link)
-        alert("Link Copied to Cliboard!\n" + link)
+        alert("Link Copied to Clipboard!\n" + link)
     } catch(err) {
         console.error(err)
     }
