@@ -91,6 +91,7 @@ body{
     height: 250px;
     border-radius: 50%;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
 #title{
