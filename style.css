@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Mokoto;
+    src: url(Assets/Fonts/Mokoto\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(Assets/Fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(Assets/Fonts/Lexend-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Oswald;
+}
+
+header{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.share-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px;
+}
+
+.share-button:hover{
+    transition: cubic-bezier(.07,1.41,.82,1.41) 0.2s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.share-button img{
+    margin-left: 8px;
+    margin-top: 7px;
+    width: 25px;
+    height: 25px;
+}
+
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.bg-overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    opacity: 20%;
+}
+
+.container{
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#title{
+    font-family: Oswald;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+#subtitle{
+    font-family: Oswald;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.tile{
+    width: 100%;
+    height: 56px;
+    background-color: pink;
+    margin: 7px;
+    border-radius: 17px;
+    opacity: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Lexend;
+    box-shadow: 3px 3px 0px black;
+}
+
+.tile:hover{
+    transition: cubic-bezier(.07,1.41,.82,1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+.tile-share-button{
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.icon{
+    margin: 6px 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.tile-share-button img{
+    margin-left: 8px;
+    margin-top: 7px;
+    width: 25px;
+    height: 25px;
+}
+
+/* .toast-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    display: grid;
+    justify-items: end;
+}
+
+.toast{
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: Lexend;
+    height: 1.5rem;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: black;
+    background-color: pink;
+    animation: toastIt 5000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+@keyframes toastIt {
+    0%, 100% {
+        transform: translateX(150%);
+        opacity: 0;
+    }    
+    10%, 90% {
+        transform: translateX(0);
+        opacity: 1;
+    }    
+} */
